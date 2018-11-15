@@ -1,0 +1,131 @@
+#about {
+  background-image: url(../images/about-bg.jpg);
+  min-height: 951px;
+  height: 951px;
+  text-align: center;
+
+  .wrapper {
+    padding-top: 240px;
+    position: relative;
+    height: inherit;
+  }
+
+  h2 {
+    font-size: 58px;
+    font-family: Montserratlight;
+    font-weight: 400;
+    color: white;
+    line-height: 1.167;
+  }
+
+  .benefits {
+    margin: 35px 0 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+
+    & > div {
+      margin: 0 22px;
+      border: 1px solid white;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 129px;
+      height: 129px;
+
+      span {
+        margin-top: 12px;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .buttons {
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div {
+      font-family: MontserratSemiBold;
+      width: 218px;
+      padding: 24px 42px;
+      border: 1px solid white;
+      border-radius: 40px;
+      color: rgb( 255, 255, 255 );
+      margin: 0 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        border: 1px solid transparent;
+        background-image: -moz-linear-gradient( 90deg, rgb( 109, 163, 219 ) 0%, rgb( 0, 109, 180 ) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb( 109, 163, 219 ) 0%, rgb( 0, 109, 180 ) 100%);
+        box-shadow: 0px 5px 29px 0px rgb( 0, 205, 214 );
+      }
+    }
+  }
+
+  p {
+    line-height: 2.5;
+    color: rgb( 194, 212, 248 );
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    width: 370px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    border-radius: 20px;
+    border:none;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-image: -moz-linear-gradient( 0deg, rgb( 109, 163, 219 ) 0%, rgb( 0, 108, 179 ) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb( 109, 163, 219 ) 0%, rgb( 0, 108, 179 ) 100%);
+    box-shadow: 0px 5px 29px 0px rgb( 0, 205, 214 );
+
+    span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+      font-family: MontserratRegular;
+      font-weight: 400;
+      font-size: 32px;
+      color: rgb( 255, 255, 255 );
+    }
+
+    &:hover {
+      outline: none;
+      background-image: -moz-linear-gradient( 90deg, rgb( 109, 163, 219 ) 0%, rgb( 0, 108, 179 ) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb( 109, 163, 219 ) 0%, rgb( 0, 108, 179 ) 100%);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

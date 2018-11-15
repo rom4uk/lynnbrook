@@ -1,0 +1,162 @@
+#testimonials {
+  margin-top: 20px;
+  background-image: url(../images/testemonial-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+  overflow: hidden;
+  min-height: 1042px;
+
+  .wrapper {
+    padding-top: 120px;
+  }
+
+  p {
+    font-family: MontserratRegular;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb( 194, 212, 248 );
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-family: MontserratRegular;
+    margin-top: 14px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 73px;
+      height: 3px;
+      background-color: rgb( 0, 202, 214 );
+      position: absolute;
+      bottom: -15px;
+      left: 45%;
+    }
+  }
+
+  .photos {
+    padding-top: 93px;
+    .row-flex();
+
+    .photo {
+      margin-right: 60px;
+      .col();
+      .size(2);
+
+      img {        
+        border: 4px solid transparent;
+        border-radius: 50%;
+      }
+
+      &.active img {
+        border: 4px solid #00a5d6;
+      }
+
+      &::last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .card {
+    margin: 100px 0 120px;
+    padding: 60px 0 0 60px;
+    text-align: left;
+    background-color: #fff;
+    display: flex;
+    min-height: 417px;
+    position: relative;
+    border-radius: 10px;
+
+    .testemonial {
+      flex-basis: 47%;
+
+      .author {
+        font-size: 32px;
+        font-family: "MyriadPro";
+        font-weight: 400;
+        color: rgb( 30, 40, 60 );
+      }
+
+      .location {
+        font-size: 11.758px;
+        color: rgb( 0, 109, 180 );
+        font-family: MontserratSemiBold;
+        font-weight: 600;
+        text-transform: uppercase;
+        -moz-transform: matrix( 1, 0, 0, 1.02061855670103, 0, 0);
+        -webkit-transform: matrix( 1, 0, 0, 1.02061855670103, 0, 0);
+        margin-top: 11px;
+        line-height: 1;
+      }
+
+      .text {
+        font-family: Montserratlight;
+        margin-top: 38px;
+        line-height: 2.143;
+        font-size: 14px;
+        color: rgb( 88, 112, 157 );
+        font-weight: 300;
+      }
+    }
+
+    .card-images {
+      background-color: #8e8e8e;
+      width: 48%;
+      position: absolute;
+      min-height: 417px;
+      display: flex;
+      align-items: center;
+      right: -41px;
+      bottom: 40px;
+      border-radius: 10px;
+      box-shadow: -5.446px 8.387px 29px 0px rgb( 36, 171, 179 );
+
+      .arrows {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .arrow {
+          width: 47px;
+          height: 89px;
+          line-height: 89px;
+          text-align: center;
+          background-repeat: no-repeat;
+          font-size: 28px;
+          color: rgb( 0, 180, 214 );
+          text-transform: uppercase;
+          -moz-transform: matrix( -0.9992193598751, 0, 0, 1, 0, 0);
+          -webkit-transform: matrix( -0.9992193598751, 0, 0, 1, 0, 0);
+          background-size: contain;
+
+          i {
+            cursor: pointer;
+            opacity: 0.702;
+
+            &:hover {
+              color: #1e283c;
+            }
+          }
+        }
+
+        .arrow-left {
+          background-image: url(../images/button-left.png);
+          transform: rotate(0deg);
+          background-position-x: -1px;
+        }
+
+        .arrow-right {
+          background-image: url(../images/button-left.png);
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
